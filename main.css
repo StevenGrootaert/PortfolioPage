@@ -3,3 +3,32 @@ body{
     padding: 0;
     margin: 0;
 }
+
+div.navigation-bar{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.nav{
+    background-color: rgba(128,128,128,0.6);
+}
+
+.nav-link {
+    color: grey;
+    padding-left: 1rem;
+    padding-right: 4rem;
+    text-align: left;
+    background-color: darkslategrey;
+}
+
+.nav-link.active {
+    color: white;
+    background-color: darkcyan;
+    padding-right: 1rem;
+}
+
+.nav-link:hover:not(.nav-link.active) {
+    color: lightblue;
+    background-color: rgb(43, 61, 61);
+}
