@@ -11,13 +11,13 @@ div.navigation-bar{
 }
 
 .nav{
-    background-color: rgba(128,128,128,0.6);
+    background-color: rgba(128,128,128,0.1);
 }
 
 .nav-link {
     color: grey;
     padding-left: 1rem;
-    padding-right: 4rem;
+    padding-right: 3.5rem;
     text-align: left;
     background-color: darkslategrey;
 }
@@ -28,7 +28,18 @@ div.navigation-bar{
     padding-right: 1rem;
 }
 
+/* .nav-link.disabled {
+    color: white;
+    background-color: rgba(128,128,128,0);
+} */
+
 .nav-link:hover:not(.nav-link.active) {
-    color: lightblue;
+    color: darkcyan;
     background-color: rgb(43, 61, 61);
+}
+
+
+.img-thumbnail {
+    max-width: 300px;
+    padding: 3rem;
 }
