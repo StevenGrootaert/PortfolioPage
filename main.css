@@ -4,6 +4,12 @@ body{
     margin: 0;
 }
 
+section{
+    padding: 2rem;
+    margin: auto;
+    max-width: 1600px;
+}
+
 div.navigation-bar{
     position: -webkit-sticky;
     position: sticky;
@@ -15,9 +21,10 @@ div.navigation-bar{
 }
 
 .nav-link {
-    color: grey;
-    padding-left: 1rem;
-    padding-right: 3.5rem;
+    color: lightgrey;
+    padding-left: .75rem;
+    padding-right: 2.5rem;
+    /* add a breakpoint for mobile make padding right 2rem look into responsive nab bar*/
     text-align: left;
     background-color: darkslategrey;
 }
@@ -40,6 +47,8 @@ div.navigation-bar{
 
 
 .img-thumbnail {
-    max-width: 300px;
-    padding: 3rem;
+    border-radius: 0;
+    border-width: 0;
+    max-height: 400px;
+    padding: 1rem;
 }
