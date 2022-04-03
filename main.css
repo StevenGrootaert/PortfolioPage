@@ -1,11 +1,11 @@
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: hsl(0,0%,95%);
     padding: 0;
     margin: 0;
 }
 
 section{
-    padding: 2rem;
+    padding: 1.5rem;
     margin: auto;
     max-width: 1600px;
 }
@@ -17,7 +17,8 @@ div.navigation-bar{
 }
 
 .nav{
-    background-color: rgba(128,128,128,0.1);
+    background-color: rgba(128,128,128,0.2);
+    /* background-color: rgba(255, 255, 255, 0.5); */
 }
 
 .nav-link {
@@ -45,10 +46,38 @@ div.navigation-bar{
     background-color: rgb(43, 61, 61);
 }
 
-
-.img-thumbnail {
-    border-radius: 0;
-    border-width: 0;
-    max-height: 400px;
+.hero-img {
+    display: inline-block;
+    margin: auto;
+    /* margin-top: 1.5rem; */
+    max-width: 100%;
     padding: 1rem;
+}
+
+/* for testing grid spacing only*/
+
+.row.sm-3 {
+    border: 3px solid darkcyan;
+}
+
+.col-md-6 {
+    border: 1px solid red;
+    text-align: left;
+    padding: 1rem;
+    margin: auto;
+}
+
+.col-lg-6 {
+    border: 1px solid red;
+    text-align: left;
+    padding: 1rem;
+    margin: auto;
+}
+
+.col-md-4 {
+    border: 1px solid red;
+}
+
+.col-lg-4 {
+    border: 1px solid red;
 }
