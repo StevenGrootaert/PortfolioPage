@@ -4,11 +4,17 @@ body{
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
 section{
     padding: 1.5rem;
     margin: auto;
     max-width: 1600px;
 }
+
 
 div.navigation-bar{
     position: -webkit-sticky;
@@ -36,6 +42,20 @@ div.navigation-bar{
     padding-right: 1rem;
 }
 
+.nav-link:active{
+    background-color: aquamarine;
+}
+
+.btn-secondary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-secondary:hover {
+    background-color: darkcyan;
+}
+
 /* .nav-link.disabled {
     color: white;
     background-color: rgba(128,128,128,0);
@@ -49,35 +69,43 @@ div.navigation-bar{
 .hero-img {
     display: inline-block;
     margin: auto;
-    /* margin-top: 1.5rem; */
     max-width: 100%;
     padding: 1rem;
+    border-radius: 30% 0%;
 }
 
-/* for testing grid spacing only*/
 
-.row.sm-3 {
-    border: 3px solid darkcyan;
-}
-
-.col-md-6 {
-    border: 1px solid red;
+.col-md-12 {
     text-align: left;
-    padding: 1rem;
+    padding: .25rem;
     margin: auto;
 }
 
 .col-lg-6 {
-    border: 1px solid red;
     text-align: left;
     padding: 1rem;
     margin: auto;
 }
 
-.col-md-4 {
-    border: 1px solid red;
+.col-md-6 {
+    text-align: left;
+    padding: .25rem;
+    margin: auto;
+}
+
+/* for testing grid spacing only
+.row.sm-3 {
+    border: 3px solid darkcyan;
 }
 
 .col-lg-4 {
     border: 1px solid red;
 }
+
+
+.col-md-4 {
+    border: 1px solid red;
+}
+*/
+
+
