@@ -1,4 +1,4 @@
-body{
+body {
     background-color: hsl(0,0%,95%);
     padding: 0;
     margin: 0;
@@ -9,20 +9,40 @@ html {
     scroll-padding-top: 2rem;
 }
 
-section{
+a {
+    color: darkcyan;
+}
+
+section.overview {
     padding: 1.5rem;
     margin: auto;
     max-width: 1600px;
 }
 
+section.full-project {
+    border: dashed 3px rgba(0, 139, 139, 0.25);
+    border-radius: 60px 0px;
+    background-color: rgba(127, 255, 212, 0.15);
+    padding: 1.5rem;
+    margin: auto;
+    max-width: 1600px;
+}
 
-div.navigation-bar{
+.card {
+    border: dashed 3px rgba(0, 139, 139, 0.25);
+    border-radius: 60px 0px;
+    background-color: rgba(127, 255, 212, 0.15);
+    padding: 1.5rem;
+    margin: auto;
+}
+
+div.navigation-bar {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
 
-.nav{
+.nav {
     background-color: rgba(128,128,128,0.2);
     /* background-color: rgba(255, 255, 255, 0.5); */
 }
@@ -31,9 +51,14 @@ div.navigation-bar{
     color: lightgrey;
     padding-left: .75rem;
     padding-right: 2.5rem;
-    /* add a breakpoint for mobile make padding right 2rem look into responsive nab bar*/
     text-align: left;
     background-color: darkslategrey;
+}
+
+@media screen and (max-width: 450px) {
+    .nav-link {
+        padding-right: .75rem;
+    }
 }
 
 .nav-link.active {
@@ -42,7 +67,7 @@ div.navigation-bar{
     padding-right: 1rem;
 }
 
-.nav-link:active{
+.nav-link:active {
     background-color: aquamarine;
 }
 
@@ -72,6 +97,14 @@ div.navigation-bar{
     max-width: 100%;
     padding: 1rem;
     border-radius: 30% 0%;
+}
+
+.project-img-full {
+    display: inline-block;
+    margin: auto;
+    max-width: 100%;
+    padding: 1rem;
+    border-radius: 60px 0px;
 }
 
 /* grid spacing and column formmatting */
