@@ -28,6 +28,11 @@ section.full-project {
     max-width: 1600px;
 }
 
+section.details {
+    margin: auto;
+    max-width: 1600px;
+}
+
 .card {
     border: dashed 3px rgba(0, 139, 139, 0.25);
     border-radius: 60px 0px;
@@ -137,10 +142,21 @@ div.navigation-bar {
     padding: 1rem;
     margin: auto;
 }
+
 .col-md-7 {
     text-align: left;
     padding: 1rem;
     margin: auto;
+}
+
+.col-sm-2 {
+    text-align: right;
+    padding: .1rem .5rem;
+}
+
+.col-sm-5 {
+    text-align: left;
+    padding: .25rem .5rem;
 }
 
 
