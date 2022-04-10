@@ -13,8 +13,19 @@ a {
     color: darkcyan;
 }
 
+a:hover {
+    color: darkslategrey;
+}
+
+.icon-link {
+    color: black;
+}
+.icon-link:hover {
+    color: darkcyan;
+}
+
 section.overview {
-    padding: 1.5rem;
+    padding: 1.5rem 0rem .75rem 0 rem;
     margin: auto;
     max-width: 1600px;
 }
@@ -28,17 +39,26 @@ section.full-project {
     max-width: 1600px;
 }
 
-section.details {
-    margin: auto;
-    max-width: 1600px;
-}
-
-.card {
+.half-project {
     border: dashed 3px rgba(0, 139, 139, 0.25);
     border-radius: 60px 0px;
-    background-color: rgba(127, 255, 212, 0.15);
-    padding: 1.5rem;
+    /* background-color: rgba(127, 255, 212, 0.15); */
+    /* padding: .5rem; */
     margin: auto;
+}
+
+.half-project-text {
+    /* border: dashed 3px rgba(0, 139, 139, 0.25); */
+    border-radius: 60px 0px;
+    background-color: rgba(127, 255, 212, 0.15);
+    padding: 1rem;
+    margin: auto;
+}
+
+section.details {
+    padding: .25rem 3.5rem;
+    margin: auto;
+    max-width: 1600px;
 }
 
 div.navigation-bar {
@@ -112,6 +132,14 @@ div.navigation-bar {
     border-radius: 60px 0px;
 }
 
+.project-img-half {
+    display: inline-block;
+    margin: auto;
+    max-width: 100%;
+    padding: 1rem;
+    border-radius: 60px 0px 0px 0px;
+}
+
 /* grid spacing and column formmatting */
 .col-md-12 {
     text-align: left;
@@ -149,19 +177,19 @@ div.navigation-bar {
     margin: auto;
 }
 
-.col-sm-2 {
+/* .col-sm-2 {
     text-align: right;
     padding: .1rem .5rem;
-}
+} */
 
-.col-sm-5 {
+.col-sm-7 {
     text-align: left;
-    padding: .25rem .5rem;
+    /* padding: 0rem 4rem; */
 }
 
 
 /* for testing grid spacing only
-.row.sm-3 {
+.col-sm-2 {
     border: 3px solid darkcyan;
 }
 
