@@ -13,6 +13,10 @@ a {
     color: darkcyan;
 }
 
+a:link {
+    text-decoration: none;
+}
+
 a:hover {
     color: darkslategrey;
 }
@@ -24,58 +28,6 @@ a:hover {
     color: darkcyan;
 }
 
-section.overview {
-    padding: 1.5rem 0rem .75rem 0 rem;
-    margin: auto;
-    max-width: 1600px;
-}
-
-.projects { /*a little more room to beathe*/
-    padding: 1rem;
-}
-
-.contact {
-    padding: 1rem;
-}
-
-section.full-project {
-    border: dashed 3px rgba(0, 139, 139, 0.25);
-    border-radius: 60px 0px;
-    /* background-color: rgba(127, 255, 212, 0.15);
-    padding: 1.5rem; */
-    margin: auto;
-    max-width: 1600px; /*is this needed here in sections*/
-}
-
-.full-project-text {
-    border-radius: 60px 0px;
-    background-color: rgba(127, 255, 212, 0.15);
-    padding: 1rem;
-    margin: auto;
-}
-
-.half-project {
-    border: dashed 3px rgba(0, 139, 139, 0.35);
-    border-radius: 60px 0px;
-    /* background-color: rgba(127, 255, 212, 0.15); */
-    /* padding: .5rem; */
-    margin: auto;
-}
-
-.half-project-text {
-    /* border: dashed 3px rgba(0, 139, 139, 0.25); */
-    border-radius: 60px 0px;
-    background-color: rgba(127, 255, 212, 0.15);
-    padding: 1rem;
-    margin: auto;
-}
-
-section.details {
-    padding: .25rem 3.5rem;
-    margin: auto;
-    max-width: 1600px;
-}
-
 div.navigation-bar {
     position: -webkit-sticky;
     position: sticky;
@@ -84,7 +36,6 @@ div.navigation-bar {
 
 .nav {
     background-color: rgba(128,128,128,0.2);
-    /* background-color: rgba(255, 255, 255, 0.5); */
 }
 
 .nav-link {
@@ -111,6 +62,11 @@ div.navigation-bar {
     background-color: aquamarine;
 }
 
+.nav-link:hover:not(.nav-link.active) {
+    color: darkcyan;
+    background-color: rgb(43, 61, 61);
+}
+
 .btn-secondary {
     display: flex;
     justify-content: center;
@@ -119,16 +75,6 @@ div.navigation-bar {
 
 .btn-secondary:hover {
     background-color: darkcyan;
-}
-
-/* .nav-link.disabled {
-    color: white;
-    background-color: rgba(128,128,128,0);
-} */
-
-.nav-link:hover:not(.nav-link.active) {
-    color: darkcyan;
-    background-color: rgb(43, 61, 61);
 }
 
 .hero-img {
@@ -155,27 +101,64 @@ div.navigation-bar {
     border-radius: 60px 0px 0px 0px;
 }
 
-/* grid spacing and column formmatting */
-.col-md-12 {
-    text-align: left;
-    padding: .25rem;
+section.overview {
+    padding: 1.5rem 0rem .75rem 0rem;
     margin: auto;
+    max-width: 1600px;
 }
 
-.col-lg-12 {
-    text-align: center;
-    padding: .25rem;
-    margin: auto;
+article.projects { 
+    padding: 1rem;
 }
 
-.col-lg-6 {
-    text-align: left;
+article.contact {
+    padding: 1rem;
+}
+
+section.details {
+    padding: .25rem 3.5rem;
+    margin: auto;
+    max-width: 1600px;
+}
+
+section.full-project {
+    border: dashed 2px rgba(0, 139, 139, 0.5);
+    border-radius: 60px 0px;
+    margin: auto;
+    max-width: 1600px;
+}
+
+section.project-pair {
+    margin: auto;
+    max-width: 1600px;
+}
+
+.full-project-text {
+    border-bottom: solid 2px rgba(0, 139, 139, 0.5);
+    border-right: solid 2px rgba(0, 139, 139, 0.5);
+    border-radius: 60px 0px;
+    background-color: rgba(127, 255, 212, 0.15);
     padding: 1rem;
     margin: auto;
 }
 
-.col-md-6 {
-    text-align: left;
+@media screen and (max-width: 1200px) {
+    .full-project-text {
+        border-right: none;
+        border-radius: 60px 0px 0px 0px;
+    }
+}
+
+.half-project {
+    border: dashed 2px rgba(0, 139, 139, 0.5);
+    border-radius: 60px 0px;
+    margin: auto;
+}
+
+.half-project-text {
+    border-top: solid 2px rgba(0, 139, 139, 0.5);
+    border-radius: 0px 0px 60px 0px;
+    background-color: rgba(127, 255, 212, 0.15);
     padding: 1rem;
     margin: auto;
 }
@@ -186,7 +169,7 @@ div.navigation-bar {
     margin: auto;
 }
 
-.col-lg-7 {
+.col-md-6 {
     text-align: left;
     padding: 1rem;
     margin: auto;
@@ -198,29 +181,21 @@ div.navigation-bar {
     margin: auto;
 }
 
-/* .col-sm-2 {
-    text-align: right;
-    padding: .1rem .5rem;
-} */
-
-/*.col-sm-7 {
+.col-md-12 {
     text-align: left;
-     padding: 0rem 4rem;
-} */
-
-
-/* for testing grid spacing only
-.col-sm-2 {
-    border: 3px solid darkcyan;
+    padding: .25rem;
+    margin: auto;
 }
 
-.col-lg-4 {
-    border: 1px solid red;
+.col-lg-7 {
+    text-align: left;
+    padding: 1rem;
+    margin: auto;
 }
 
-
-.col-md-4 {
-    border: 1px solid red;
+.col-lg-12 {
+    text-align: center;
+    padding: .25rem;
+    margin: auto;
 }
-*/
 
