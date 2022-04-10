@@ -1,5 +1,201 @@
-body{
-    background-color: rgb(255, 255, 255);
+body {
+    background-color: hsl(0,0%,95%);
     padding: 0;
     margin: 0;
 }
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+a {
+    color: darkcyan;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkslategrey;
+}
+
+.icon-link {
+    color: black;
+}
+.icon-link:hover {
+    color: darkcyan;
+}
+
+div.navigation-bar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.nav {
+    background-color: rgba(128,128,128,0.2);
+}
+
+.nav-link {
+    color: lightgrey;
+    padding-left: .75rem;
+    padding-right: 2.5rem;
+    text-align: left;
+    background-color: darkslategrey;
+}
+
+@media screen and (max-width: 450px) {
+    .nav-link {
+        padding-right: .75rem;
+    }
+}
+
+.nav-link.active {
+    color: white;
+    background-color: darkcyan;
+    padding-right: 1rem;
+}
+
+.nav-link:active {
+    background-color: aquamarine;
+}
+
+.nav-link:hover:not(.nav-link.active) {
+    color: darkcyan;
+    background-color: rgb(43, 61, 61);
+}
+
+.btn-secondary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-secondary:hover {
+    background-color: darkcyan;
+}
+
+.hero-img {
+    display: inline-block;
+    margin: auto;
+    max-width: 100%;
+    padding: 1rem;
+    border-radius: 30% 0%;
+}
+
+.project-img-full {
+    display: inline-block;
+    margin: auto;
+    max-width: 100%;
+    padding: .5rem;
+    border-radius: 0px 0px 60px 0px;
+}
+
+.project-img-half {
+    display: inline-block;
+    margin: auto;
+    max-width: 100%;
+    padding: .5rem;
+    border-radius: 60px 0px 0px 0px;
+}
+
+section.overview {
+    padding: 1.5rem 0rem .75rem 0rem;
+    margin: auto;
+    max-width: 1600px;
+}
+
+article.projects { 
+    padding: 1rem;
+}
+
+article.contact {
+    padding: 1rem;
+}
+
+section.details {
+    padding: .25rem 3.5rem;
+    margin: auto;
+    max-width: 1600px;
+}
+
+section.full-project {
+    border: dashed 2px rgba(0, 139, 139, 0.5);
+    border-radius: 60px 0px;
+    margin: auto;
+    max-width: 1600px;
+}
+
+section.project-pair {
+    margin: auto;
+    max-width: 1600px;
+}
+
+.full-project-text {
+    border-bottom: solid 2px rgba(0, 139, 139, 0.5);
+    border-right: solid 2px rgba(0, 139, 139, 0.5);
+    border-radius: 60px 0px;
+    background-color: rgba(127, 255, 212, 0.15);
+    padding: 1rem;
+    margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .full-project-text {
+        border-right: none;
+        border-radius: 60px 0px 0px 0px;
+    }
+}
+
+.half-project {
+    border: dashed 2px rgba(0, 139, 139, 0.5);
+    border-radius: 60px 0px;
+    margin: auto;
+}
+
+.half-project-text {
+    border-top: solid 2px rgba(0, 139, 139, 0.5);
+    border-radius: 0px 0px 60px 0px;
+    background-color: rgba(127, 255, 212, 0.15);
+    padding: 1rem;
+    margin: auto;
+}
+
+.col-sm-6 {
+    text-align: left;
+    padding: .25rem;
+    margin: auto;
+}
+
+.col-md-6 {
+    text-align: left;
+    padding: 1rem;
+    margin: auto;
+}
+
+.col-md-7 {
+    text-align: left;
+    padding: 1rem;
+    margin: auto;
+}
+
+.col-md-12 {
+    text-align: left;
+    padding: .25rem;
+    margin: auto;
+}
+
+.col-lg-7 {
+    text-align: left;
+    padding: 1rem;
+    margin: auto;
+}
+
+.col-lg-12 {
+    text-align: center;
+    padding: .25rem;
+    margin: auto;
+}
+

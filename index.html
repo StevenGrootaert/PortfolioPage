@@ -3,11 +3,278 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortfolioPage</title>
-    
+    <title>Steven Grootaert</title>
+    <link rel="icon" type="image/fav-icon" href="./assests/sg-favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <img src="./assests/StevenGrootaert-TestSignal.png" alt="test-signal" width="100%">
+    <div class="home">
+        <a name="home"></a>
+    </div>
+    <img src="./assests/Banner_MTN.jpg" class="img-fluid" alt="mountain-banner-image">
+    <!-- <header> wrapping the nav in the header div seems to break the sticky .. would also be noce to have banner fixed and site scroll on top -->
+        <div class="navigation-bar">
+            <nav class="nav justify-content-end">
+                <a class="nav-link active" aria-current="page" href="#home">. . / </a>
+                <a class="nav-link" href="#about-me">\ hello</a>
+                <a class="nav-link" href="#projects">\ projects</a>
+                <a class="nav-link" href="#contact">\ contact</a>
+            </nav>
+        </div>
+    <!-- </header> -->
+
+    <article class="about-me">
+        <a name="about-me"></a>
+        <section class="overview">
+            <div class="row sm-3">
+                <div class="col-md-7">
+                    <h4 style="padding-inline: 1rem;">Hello,</h4>
+                    <h1 class="display-3" style="padding-inline: 1rem;">I'm Steven</h1>
+                    <h4 style="padding-inline: 1rem;">an Architect, and now also a programmer*</h4>
+                    <h6 style="padding-inline: 1rem;"><em>Welcome to my foray into software development.</em></h6>
+                </div>
+                <div class="col-md-4">
+                    <img src="./assests/StevenGrootaert-SqCL.jpg" class="hero-img" alt="Steven Profile Image">
+                </div>
+              </div>
+
+            <div class="row sm-3">
+                <div class="col-lg-7">
+                    <div class="pb-3" style="padding-inline: 1rem;">
+                        <p class="lead">
+                            I've been an architect since I was a kid - offically I became licensed in 2020. It's been an increadible journey. 
+                            However along the way I've been told that I'd make an excellent programmer. I think the two share much in common;
+                            we navigate abstract concepts and create unique solutions to indefinable problems. 
+                            Thinking of every possible constraint and evaluating every outcome from concept to built detail comes with the terriotry.    
+                            I am fastidious by nature and leverage my architecural thought process in everything I do.
+                        </p> 
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pb-3" style="padding: 1rem;">
+                        <div class="col-md-12">
+                            <div class="pb-0" style="padding-inline: .25rem;">
+                                <p>
+                              * I'm still learning and taking courses independantly.
+                                Last year I graduated from a software development bootcamp offered by Eleven Fifty. 
+                                In the meantime I've been teaching as an adjunct at Ball State University and working 
+                                on various projects.   
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row sm-4" style="padding-inline: 1rem;">
+                            <div class="col-sm-6">
+                                <a href="https://www.linkedin.com/in/steven-grootaert-642bb43b/details/certifications/" target="_blank" rel="noopener noreferrer" button type="button" class="btn btn-secondary">Programming Certificates</button></a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="https://www.grootaert.com/" target="_blank" rel="noopener noreferrer" button type="button" class="btn btn-secondary">Architectural Portfolio</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </section>
+    </article>
+    <br>
+    <br>
+    <article class="projects">
+        <a name="projects"></a>
+        <section class="overview"> 
+            <div class="row sm-3">
+                <div class="col-md-12">
+                    <h4 style="padding-inline: 1.5rem;">Projects</h4>
+                    <h6 style="padding-inline: 1.5rem;"><em>These are projects that I completed as part of my coursework at Eleven Fifty.</em></h6>
+                    <p class="text-muted" style="padding-inline: 1.5rem;"><em>Skills:&ensp;#C - ASP.NET Web MVC - Razor - REST API - Postman - CSS - HTML - Github - Agile Methodologies</em></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="full-project">
+            <div class="row sm-3">
+                <div class="col-xl-3">
+                    <div class="full-project-text">
+                        <h4 style="padding: .75rem 1rem;">DoWhat Web MVC app</h4>
+                        <p style="padding-inline: 1rem;">
+                            This was my Eleven Fifty 'Red Badge' final project; building an ASP.NET MVC web application using N-Teir Architecture. 
+                            From initial concept to deployment on Azure this process was largly self guided over the course of several weeks with the help of our instructor. 
+                            This web app aims to help overcome descision fatique by doing what needs to be done with the time you have. 
+                            
+                        </p>
+                        <p style="padding-inline: 1rem;">
+                            Visit the Github Repo <a href="https://github.com/StevenGrootaert/DoWhat.git" target="_blank" rel="nooperner noreferrer">here</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-9">
+                    <a href="./assests/Projects/DoWhat-WebMVC.jpg" target="_blank" rel="nooperner noreferrer"><img src="./assests/Projects/DoWhat-WebMVC.jpg" class="project-img-full" alt="Project Image"></a> 
+                </div>
+            </div>
+        </section>
+        <p class="text-muted" style="text-align: center; margin: .75rem;"> -&emsp;&emsp;/&nbsp;/&nbsp;/ &emsp;.&ensp;.&ensp;.&emsp; /&nbsp;/&nbsp;<a href="./assests/DEV.grootaert-test-signal-RCA.png" target="_blank" rel="nooperner noreferrer">/</a>&emsp;&emsp;-</p>
+
+        <section class="full-project">
+            <div class="row sm-3">
+                <div class="col-xl-3">
+                    <div class="full-project-text">
+                        <h4 style="padding: .75rem 1rem;">Slot Me API</h4>
+                        <p style="padding-inline: 1rem;">
+                            This was our 'Blue Badge' final project; building an .NET API Web App in small group where we learned to collaborate on different parts of the project via Github. 
+                            Our idea was to build an app to connect artists with free time to clients to book gigs. After extensive outlining of our data structure with forgeign keys, models and services, 
+                            I managed the repositiry and pull requests for merging our code into a finalized project.                            
+                        </p>
+                        <p style="padding-inline: 1rem;">
+                            Visit the Github Repo <a href="https://github.com/StevenGrootaert/BBP-SlotMe.git" target="_blank" rel="nooperner noreferrer">here</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-9">
+                    <a href="./assests/Projects/SlotMe-API.jpg" target="_blank" rel="nooperner noreferrer"><img src="./assests/Projects/SlotMe-API.jpg" class="project-img-full" alt="Project Image"></a>
+                </div>
+            </div>
+        </section>
+        <p class="text-muted" style="text-align: center; margin: .75rem;"> -&emsp;&emsp;/&nbsp;/&nbsp;/ &emsp;.&ensp;.&ensp;.&emsp; /&nbsp;/&nbsp;/&emsp;&emsp;-</p>
+
+        <section class="full-project">
+            <div class="row sm-3">
+                <div class="col-xl-3">
+                    <div class="full-project-text">
+                        <h4 style="padding: .75rem 1rem;">24hr API</h4>
+                        <p style="padding-inline: 1rem;">
+                            For our first "from scratch" ASP.NET Web API build we had only "24 hours" to complete it. We learned how to construct endpoints that simulate a Social Media API following APIE and SOLID patterns and principles. 
+                            The focus of this project was more about learning to use Git in a collaborative way rather than building a fully functional API. 
+                        </p>
+                        <p style="padding-inline: 1rem;">
+                            Visit the Github Repo <a href="https://github.com/StevenGrootaert/24Hour.git" target="_blank" rel="nooperner noreferrer">here</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-9">
+                    <a href="./assests/Projects/Postman-24hr-API.jpg" target="_blank" rel="nooperner noreferrer"><img src="./assests/Projects/Postman-24hr-API.jpg" class="project-img-full" alt="Project Image"></a> 
+                </div>
+            </div>
+        </section>
+        <p class="text-muted" style="text-align: center; margin: .75rem;"> -&emsp;&emsp;/&nbsp;/&nbsp;/ &emsp;.&ensp;.&ensp;.&emsp; /&nbsp;/&nbsp;/&emsp;&emsp;-</p>
+        
+        <section class="full-project">
+            <div class="row sm-3">
+                <div class="col-xl-3">
+                    <div class="full-project-text">
+                        <h4 style="padding: .75rem 1rem;">Gold Badge Challenges</h4>
+                        <p style="padding-inline: 1rem;">
+                            The final assignment of 'Gold Badge', we were tasked with completing a variety of Console App Challenges. 
+                            In this prompt I was asked to create a user inferface to implement CRUD on a repository of access badges and employee details. 
+                            Here we see the DisplayAllBadges methods that shows a list of all the Badge IDs and which doors they have access to.
+                        </p>
+                        <p style="padding-inline: 1rem;">
+                            Visit the Github Repo <a href="https://github.com/StevenGrootaert/GoldBadge-Challenge.git" target="_blank" rel="nooperner noreferrer">here</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-9">
+                    <a href="./assests/Projects/GBC-Badges-List-Console.jpg" target="_blank" rel="nooperner noreferrer"><img src="./assests/Projects/GBC-Badges-List-Console.jpg" class="project-img-full" alt="Project Image"></a> 
+                </div>
+            </div>
+        </section>
+        <p class="text-muted" style="text-align: center; margin: .75rem;"> -&emsp;&emsp;/&nbsp;/&nbsp;<a href="./assests/DEV.grootaert-test-signal.jpg" target="_blank" rel="nooperner noreferrer">/</a> &emsp;.&ensp;.&ensp;.&emsp; /&nbsp;/&nbsp;/&emsp;&emsp;-</p>
+
+        <section class="project-pair">
+            <div class="row sm-3">
+                <div class="col-md-6">
+                    <div class="half-project">
+                        <a href="./assests/Projects/Console-Game.jpg" target="_blank" rel="nooperner noreferrer"><img src="./assests/Projects/Console-Game.jpg" class="project-img-half" alt="Console Game"></a> 
+                        <div class="half-project-text">
+                        <h4 style="padding: .75rem 1rem;">Console Game</h4>
+                            <p style="padding-inline: 1rem;">
+                                This was a collaborative effort in which we were tasked with creating a Console Applicaion game. We wrote a text based choose-your-own-adventure game in the form of an Escape Room. 
+                                We took turns writing aspects of the story and ensuring that the game could be played from start to finish with all possible paths through the game being tested. 
+                            </p>
+                            <p style="padding-inline: 1rem;">
+                                Visit the Github Repo <a href="https://github.com/StevenGrootaert/Pair-Console-Game.git" target="_blank" rel="nooperner noreferrer">here</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="half-project">
+                        <a href="./assests/Projects/CodePen-CSS-Creature.jpg" target="_blank" rel="nooperner noreferrer"><img src="./assests/Projects/CodePen-CSS-Creature.jpg" class="project-img-half" alt="Console Game"></a> 
+                        <div class="half-project-text">
+                        <h4 style="padding: .75rem 1rem;">CSS Creature</h4>
+                            <p style="padding-inline: 1rem;">
+                                As we were learning about CSS styling properties and rules we were given this assignment where we were directed to create an creature (or image) using nothing but HTML and CSS. 
+                                Through a series of relativly positioned and transformed boxes grouped in a hierarchy of classes and ID selectors the head of a puppy emerged.    
+                            </p>
+                            <p style="padding-inline: 1rem;">
+                                Visit the CodePen <a href="https://codepen.io/stevengrootaert/pen/WNwwGVM" target="_blank" rel="nooperner noreferrer">here</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+    <br>
+    <br>
+    <article class="contact">
+        <a name="contact"></a>
+        <section class="overview">
+            <div class="row sm-3">
+                <div class="col-md-12">
+                    <h4 style="padding-inline: 1.5rem;">Contact Links</h4>
+                    <h6 style="padding-inline: 1.5rem;"><em>Feel free to send me a message</em></h6>
+                </div>
+            </div>
+        </section>
+        <section class="details">
+            <div class="row sm-1">
+                <div class="col-sm-1">
+                    <p> 
+                        <a class="icon-link" href="https://www.linkedin.com/in/steven-grootaert-642bb43b" target="_blank" rel="nooperner noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                            </svg>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-sm-7">
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                        </svg>
+                        &emsp;<a href="mailto:steven.grootaert@gmail.com">steven.grootaert@gmail.com</a>
+                    </P>
+                </div>
+            </div>
+            <div class="row sm-1">
+                <div class="col-sm-1">
+                    <p> 
+                        <a class="icon-link" href="https://github.com/StevenGrootaert" target="_blank" rel="nooperner noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-sm-7">
+                   <p> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-filetype-pdf" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 0 .389.06.512.181.123.122.185.296.185.522Zm1.217-1.333v3.999h1.46c.401 0 .734-.08.998-.237a1.45 1.45 0 0 0 .595-.689c.13-.3.196-.662.196-1.084 0-.42-.065-.778-.196-1.075a1.426 1.426 0 0 0-.589-.68c-.264-.156-.599-.234-1.005-.234H3.362Zm.791.645h.563c.248 0 .45.05.609.152a.89.89 0 0 1 .354.454c.079.201.118.452.118.753a2.3 2.3 0 0 1-.068.592 1.14 1.14 0 0 1-.196.422.8.8 0 0 1-.334.252 1.298 1.298 0 0 1-.483.082h-.563v-2.707Zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638H7.896Z"/>
+                        </svg>
+                        &emsp;<a href="./assests/DEV.grootaert-test-signal.jpg" target="_blank" rel="nooperner noreferrer">download</a> my resume
+                    </p>
+                </div>
+            </div>
+        </section>
+    </article>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="col-lg-12 my-4 border-top">
+        <span class="text-muted">© 2022 Steven Grootaert</span>
+    </footer>
+
 </body>
 </html>
