@@ -30,17 +30,32 @@ section.overview {
     max-width: 1600px;
 }
 
+.projects { /*a little more room to beathe*/
+    padding: 1rem;
+}
+
+.contact {
+    padding: 1rem;
+}
+
 section.full-project {
     border: dashed 3px rgba(0, 139, 139, 0.25);
     border-radius: 60px 0px;
-    background-color: rgba(127, 255, 212, 0.15);
-    padding: 1.5rem;
+    /* background-color: rgba(127, 255, 212, 0.15);
+    padding: 1.5rem; */
     margin: auto;
-    max-width: 1600px;
+    max-width: 1600px; /*is this needed here in sections*/
+}
+
+.full-project-text {
+    border-radius: 60px 0px;
+    background-color: rgba(127, 255, 212, 0.15);
+    padding: 1rem;
+    margin: auto;
 }
 
 .half-project {
-    border: dashed 3px rgba(0, 139, 139, 0.25);
+    border: dashed 3px rgba(0, 139, 139, 0.35);
     border-radius: 60px 0px;
     /* background-color: rgba(127, 255, 212, 0.15); */
     /* padding: .5rem; */
@@ -128,21 +143,27 @@ div.navigation-bar {
     display: inline-block;
     margin: auto;
     max-width: 100%;
-    padding: 1rem;
-    border-radius: 60px 0px;
+    padding: .5rem;
+    border-radius: 0px 0px 60px 0px;
 }
 
 .project-img-half {
     display: inline-block;
     margin: auto;
     max-width: 100%;
-    padding: 1rem;
+    padding: .5rem;
     border-radius: 60px 0px 0px 0px;
 }
 
 /* grid spacing and column formmatting */
 .col-md-12 {
     text-align: left;
+    padding: .25rem;
+    margin: auto;
+}
+
+.col-lg-12 {
+    text-align: center;
     padding: .25rem;
     margin: auto;
 }
@@ -182,10 +203,10 @@ div.navigation-bar {
     padding: .1rem .5rem;
 } */
 
-.col-sm-7 {
+/*.col-sm-7 {
     text-align: left;
-    /* padding: 0rem 4rem; */
-}
+     padding: 0rem 4rem;
+} */
 
 
 /* for testing grid spacing only
@@ -202,5 +223,4 @@ div.navigation-bar {
     border: 1px solid red;
 }
 */
-
 
