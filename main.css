@@ -125,12 +125,17 @@ div.navigation-bar {
     padding: .5rem;
     border-radius: 60px 0px 0px 0px;
 }
+article.about-me{
+    overflow-x: hidden;
+}
 
 article.projects { 
+    overflow-x: hidden;
     padding: 1rem;
 }
 
 article.contact {
+    overflow-x: hidden;
     padding: 1rem;
 }
 
