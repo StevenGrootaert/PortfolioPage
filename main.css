@@ -74,6 +74,7 @@ div.navigation-bar {
 }
 
 .btn-secondary {
+    -webkit-appearance: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,12 +125,17 @@ div.navigation-bar {
     padding: .5rem;
     border-radius: 60px 0px 0px 0px;
 }
+article.about-me{
+    overflow-x: hidden;
+}
 
 article.projects { 
+    overflow-x: hidden;
     padding: 1rem;
 }
 
 article.contact {
+    overflow-x: hidden;
     padding: 1rem;
 }
 
@@ -146,8 +152,10 @@ section.details {
 }
 
 section.full-project {
-    border: dashed 2px rgba(0, 139, 139, 0.5);
+    /* border: dashed 2px rgba(0, 139, 139, 0.5); */
     border-radius: 60px 0px;
+    outline: dashed 2px rgba(0, 139, 139, 0.5);
+    outline-offset: -2px;
     margin: auto;
     max-width: 1500px;
 }
@@ -159,11 +167,19 @@ section.project-pair {
 
 .full-project-text {
     border-bottom: solid 2px rgba(0, 139, 139, 0.5);
-    border-right: solid 2px rgba(0, 139, 139, 0.5);
-    border-radius: 60px 0px;
-    background-color: rgba(127, 255, 212, 0.15);
-    padding: 1rem;
+    /* border-right: solid 2px rgba(0, 139, 139, 0.5); */
+    /* border-radius: 60px 0px; */
+    /* background-color: rgba(127, 255, 212, 0.15); */
+    /* padding: 1rem; */
     margin: auto;
+}
+
+.full-project-text > h4 {
+    padding: .75rem 1.75rem;
+    color: white;
+    background-color: darkcyan;
+    border: solid 1px darkcyan;
+    border-radius: 60px 0px 0px 0px;
 }
 
 @media screen and (max-width: 1200px) {
