@@ -9,14 +9,14 @@ html {
     scroll-padding-top: 2rem;
 }
 
-a {
-    color: darkcyan;
-}
-
 main{
     background-color: inherit;
     position: relative;
-    bottom: -500px; 
+    bottom: -500px;
+}
+
+a {
+    color: darkcyan;
 }
 
 a:link {
@@ -123,13 +123,14 @@ div.navigation-bar {
     margin: auto;
     max-width: 100%;
     padding: .5rem;
+    padding-bottom: .65rem;
     border-radius: 60px 0px 0px 0px;
 }
 article.about-me{
     overflow-x: hidden;
 }
 
-article.projects { 
+article.projects {
     overflow-x: hidden;
     padding: 1rem;
 }
@@ -154,8 +155,8 @@ section.details {
 section.full-project {
     /* border: dashed 2px rgba(0, 139, 139, 0.5); */
     border-radius: 60px 0px;
-    outline: dashed 2px rgba(0, 139, 139, 0.5);
-    outline-offset: -2px;
+    border: dashed 2px rgba(0, 139, 139, 0.75);
+    /* outline-offset: -2px; */
     margin: auto;
     max-width: 1500px;
 }
@@ -167,8 +168,8 @@ section.project-pair {
 
 .full-project-text {
     border-bottom: solid 2px rgba(0, 139, 139, 0.5);
-    /* border-right: solid 2px rgba(0, 139, 139, 0.5); */
-    /* border-radius: 60px 0px; */
+    border-right: solid 2px rgba(0, 139, 139, 0.5);
+    border-radius: 0px 0px 30px 0px;
     /* background-color: rgba(127, 255, 212, 0.15); */
     /* padding: 1rem; */
     margin: auto;
@@ -178,8 +179,15 @@ section.project-pair {
     padding: .75rem 1.75rem;
     color: white;
     background-color: darkcyan;
-    border: solid 1px darkcyan;
+    /* border-right: solid 3px darkcyan; */
+    /* border: solid 2px darkcyan; */
     border-radius: 60px 0px 0px 0px;
+    margin: -2px;
+}
+
+.full-project-text > p {
+    margin-top: .75rem;
+    padding-inline: 1rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -190,17 +198,30 @@ section.project-pair {
 }
 
 .half-project {
-    border: dashed 2px rgba(0, 139, 139, 0.5);
+    border: dashed 2px rgba(0, 139, 139, 0.75);
     border-radius: 60px 0px;
     margin: auto;
 }
 
 .half-project-text {
-    border-top: solid 2px rgba(0, 139, 139, 0.5);
+    /* border-top: solid 2px rgba(0, 139, 139, 0.5); */
     border-radius: 0px 0px 60px 0px;
-    background-color: rgba(127, 255, 212, 0.15);
+    background-color: rgba(0, 139, 139, 1.0);
+    color: white;
     padding: 1rem;
-    margin: auto;
+    margin: -2px;
+}
+
+.half-project-text > p > a {
+    color: aqua;
+}
+
+.half-project-text > p > a:hover {
+    color: darkslategray;
+}
+
+.half-project-text > h4 {
+    padding: 0rem 1rem .75rem 1rem;
 }
 
 .col-sm-6 {
@@ -238,4 +259,3 @@ section.project-pair {
     padding: .25rem;
     margin: auto;
 }
-
