@@ -36,6 +36,11 @@ h4 {
     font-weight: 600;
 }
 
+h5 {
+    font-family: myriad-pro, sans-serif;
+    font-weight: 600;
+}
+
 h6 {
     font-family: myriad-pro, sans-serif;
     font-weight: 600;
@@ -199,7 +204,7 @@ section.project-pair {
     margin: auto;
 }
 
-.full-project-text > h4 {
+.full-project-text > h5 {
     padding: .75rem 1.75rem;
     color: white;
     background-color: darkcyan;
