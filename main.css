@@ -69,6 +69,7 @@ div.navigation-bar {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .nav {
@@ -95,7 +96,7 @@ div.navigation-bar {
 }
 
 .nav-link:hover::before{
-    width: 100%;
+    width: 80%;
     transition: all ease-in-out 250ms;
 }
 
