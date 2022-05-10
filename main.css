@@ -81,6 +81,22 @@ div.navigation-bar {
     padding-right: 2.5rem;
     text-align: left;
     background-color: darkslategrey;
+    position: relative;
+}
+
+.nav-link::before {
+    content: ' ';
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: darkcyan;
+    position: absolute;
+    top: 0;
+}
+
+.nav-link:hover::before{
+    width: 100%;
+    transition: all ease-in-out 250ms;
 }
 
 @media screen and (max-width: 450px) {
@@ -95,8 +111,8 @@ div.navigation-bar {
     padding-right: 1rem;
 }
 
-.nav-link:active {
-    background-color: aquamarine;
+.nav-link:hover {
+    color: darkslategray;
 }
 
 .nav-link:hover:not(.nav-link.active) {
@@ -108,9 +124,24 @@ div.navigation-bar {
     -webkit-appearance: none;
     display: flex;
     justify-content: center;
+    height: 70px;
+    position: relative;
     align-items: center;
     background-color: darkslategray;
     color: lightgrey;
+    border-radius: .75rem;
+}
+
+@media screen and (max-width: 990px) {
+    .btn-secondary {
+        height: 46px;
+    }
+}
+
+@media screen and (min-width: 1465px) {
+    .btn-secondary {
+        height: 46px;
+    }
 }
 
 .btn-secondary:hover {
@@ -180,7 +211,7 @@ section.overview {
 }
 
 section.details {
-    padding: .25rem 3.5rem;
+    padding: .25rem 1rem;
     margin: auto;
     max-width: 1500px;
 }
