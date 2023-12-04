@@ -73,7 +73,8 @@ div.navigation-bar {
 }
 
 .nav {
-    background-color: rgba(128,128,128,0.2);
+    /*background-color: rgba(128,128,128,0.2);*/
+    background-color: rgba(0, 103, 112, 0.25);
 }
 
 .nav-link {
@@ -172,7 +173,7 @@ div.navigation-bar {
     margin: auto;
     max-width: 100%;
     padding: 1rem;
-    border-radius: 30% 0%;
+    border-radius: 15% 0%;
 }
 
 .project-img-full {
@@ -180,7 +181,7 @@ div.navigation-bar {
     margin: auto;
     max-width: 100%;
     padding: .5rem;
-    border-radius: 0px 0px 60px 0px;
+    border-radius: 0px 0px 30px 0px;
 }
 
 .project-img-half {
@@ -189,7 +190,7 @@ div.navigation-bar {
     max-width: 100%;
     padding: .5rem;
     padding-bottom: .65rem;
-    border-radius: 60px 0px 0px 0px;
+    border-radius: 30px 0px 0px 0px;
 }
 article.about-me{
     overflow-x: hidden;
@@ -218,7 +219,7 @@ section.details {
 }
 
 section.full-project {
-    border-radius: 60px 0px;
+    border-radius: 30px 0px;
     border: dashed 2px rgba(0, 139, 139, 0.75);
     margin: auto;
     max-width: 1500px;
@@ -237,10 +238,10 @@ section.project-pair {
 }
 
 .full-project-text > h5 {
-    padding: .75rem 1.75rem;
+    padding: .75rem 1.25rem;
     color: white;
     background-color: darkcyan;
-    border-radius: 60px 0px 0px 0px;
+    border-radius: 30px 0px 0px 0px;
     margin: -2px;
 }
 
@@ -252,18 +253,18 @@ section.project-pair {
 @media screen and (max-width: 1200px) {
     .full-project-text {
         border-right: none;
-        border-radius: 60px 0px 0px 0px;
+        border-radius: 30px 0px 0px 0px;
     }
 }
 
 .half-project {
     border: dashed 2px rgba(0, 139, 139, 0.75);
-    border-radius: 60px 0px;
+    border-radius: 30px 0px;
     margin: auto;
 }
 
 .half-project-text {
-    border-radius: 0px 0px 60px 0px;
+    border-radius: 0px 0px 30px 0px;
     background-color: rgba(0, 139, 139, 1.0);
     color: white;
     padding: 1rem;
